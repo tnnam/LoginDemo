@@ -44,7 +44,6 @@
                     <navigationItem key="navigationItem" id="0Sh-nK-oeF"/>
                     <connections>
                         <outlet property="loginButton" destination="rgY-0e-9fK" id="hJw-x4-OQp"/>
-                        <segue destination="d8H-XR-9Qc" kind="presentation" identifier="showTimeLine" id="9Kp-1V-TxQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Yn-K7-eKU" userLabel="First Responder" sceneMemberID="firstResponder"/>

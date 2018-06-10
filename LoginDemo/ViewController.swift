@@ -56,7 +56,13 @@ class ViewController: UIViewController {
                             UserDefaults.standard.set(name, forKey: "name")
                             UserDefaults.standard.set(url, forKey: "url")
                             print(email, name, url)
-                            self.performSegue(withIdentifier: "showTimeLine", sender: nil)
+//                            self.performSegue(withIdentifier: "showTimeLine", sender: nil)
+                            
+                            let appdelegate = UIApplication.shared.delegate as! AppDelegate
+                            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                            let homeViewController = mainStoryboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+                            let nav = UINavigationController(rootViewController: homeViewController)
+                            appdelegate.window!.rootViewController = nav
                         }
                     }
                 }
