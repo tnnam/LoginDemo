@@ -58,6 +58,7 @@ class ViewController: UIViewController {
                             print(email, name, url)
 //                            self.performSegue(withIdentifier: "showTimeLine", sender: nil)
                             
+                            //chuyen man
                             let appdelegate = UIApplication.shared.delegate as! AppDelegate
                             let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                             let homeViewController = mainStoryboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
